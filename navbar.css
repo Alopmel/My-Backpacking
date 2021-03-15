@@ -82,23 +82,58 @@ nav{
         position: absolute;
         top: 15px;
         right: 25px;
+        transition: 0.2s 0.1s;
+    }
+
+    .ham:hover{
+        transform: rotate(360deg);
     }
 
     nav{
         flex-direction: column;
-        align-items: flex-start;
-        padding-top: 25px 0; 
+        align-items: center;
+        padding-top:25px 0; 
     }
 
     .menu-links{
-        flex-direction: column;
-        
+        flex-direction: column;        
         align-items: left;
         height: auto;
-        margin: 10px;
+        margin: 0;
         padding: 0;
         width: 100%;
+        display:none;
+        opacity: 0;
     }
 
+    .menu-links li{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
 
+    }
 }
+
+@keyframes showMenu{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.menu-links.activate{
+    display:flex;
+    animation: showMenu 400ms ease-in-out both;
+}
+
+.br-1.animated{
+    transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animated{
+    opacity: 0;
+}
+
+.br-3.animated{
+    transform: rotate(45deg) translate(-10px, -8px);
+}
+
+
+
