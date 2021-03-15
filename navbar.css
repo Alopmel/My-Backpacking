@@ -1,0 +1,104 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-family:'Ubuntu Regular', sans-serif;
+}
+.logo{
+ width: 150px;
+ height: 90px;   
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 8vh;
+    background-color: #85D3F0;
+}
+
+.ham{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.ham span {
+    display: block;
+    background-color: #92E442;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.menu-links {
+   display: flex;
+   padding: 0;
+}
+
+.menu-links li{
+   padding: 0 40px;
+   list-style-type: none; 
+   transition: 0.3s;
+}
+
+.menu-links li a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #7A7878 ;
+    font-weight: 600;
+}
+
+.menu-links li:hover{
+    background-color: #92E442 ;
+}
+
+/*MOVILE*/
+
+@media (max-width: 768px){
+    body{
+        overflow: hidden;
+    }
+
+    .logo{
+        padding-left: 25px;
+    }
+
+    .ham{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 25px 0; 
+    }
+
+    .menu-links{
+        flex-direction: column;
+        
+        align-items: left;
+        height: auto;
+        margin: 10px;
+        padding: 0;
+        width: 100%;
+    }
+
+
+}
