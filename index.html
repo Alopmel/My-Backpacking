@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backpacking through Spain</title>
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="navbar.css">    
 </head>
 <body>
     <header>
-        <nav>
             <a href="#">
             <img class="logo" src="images/logo.png" alt="logo">
-            </a>  
+            </a>
+            <nav class="nav-bar menu-fixed">  
             <ul class="menu-links">
-                <li><a href="#"> Home </a></li>
-                <li><a href="#"> Gastronomy </a></li>
-                <li><a href="#"> History and Culture </a></li>
-                <li><a href="#"> Landscape </a></li>
-                <li><a href="#"> Contact Us </a></li>
+                <li><a href="#">
+                    <img class="logo" src="images/logo.png" alt="logo">
+                    </a></li>    
+                <li><a href="#" class="li-a"> Home </a></li>
+                <li><a href="#" class="li-a"> Gastronomy </a></li>
+                <li><a href="#" class="li-a"> History and Culture </a></li>
+                <li><a href="#" class="li-a"> Landscape </a></li>
+                <li><a href="#" class="li-a"> Contact Us </a></li>
             </ul>
             <button class="ham" type="button">
                 <span class="br-1"></span>
@@ -28,45 +31,80 @@
         </nav>
     </header>
     <script src="navbar.js"> </script>
-    <section class="sectionSlider"></section>
-    
-        <div class="slider">
+        <div class="slider-pc slider">
             <ul>
-                <li><img src="images/home-spain.jpg" alt=""><h1> Do you want to visit spain? </h1>
-                    <h2> Let me show you...</h2></li>
-                <li><img src="images/home-spain2.jpg" alt=""><h1> Do you want to visit spain? </h1>
-                    <h2> Let me show you... </h2></li>
-                <li><img src="images/home-spain3.jpg" alt=""><h1> Do you want to visit spain? </h1>
-                    <h2> Let me show you... </h2></li>
+                <li><img src="images/home-spain.jpg" alt=""></li>
+                <li><img src="images/home-spain2.jpg" alt=""></li>
+                <li><img src="images/home-spain3.jpg" alt=""></li>
             </ul>
         </div>
-    </section>
-    <footer class="forms">
-        <div>
-            <p> Contact Us</p>
-            <form id="contactUs">
-                <input type="text" placeholder="Insert your email....">
-            </br>
-            </br>
-                <input type="text-content" class="text-content" placeholder="Write here what you want to tell us....">
-                <button onclick="submitContact();"> Submit </button> 
-            </form>
-        </div>
-        <div>
-            <p> Subscribe</p>
-            <form class="subscribe">
-                <input type="text" placeholder="Insert your Name...">
-            </br>
-            </br>
-                <input type="text" placeholder="Insert your email....">
-            </br>
-            </br>
-                <button onclick="submitSubscribe();"> Submit </button> 
-            </form>
+    <div class="tittle">
+    <h1>Do you want to visit Spain?</h1>
+    <h2>Let me show you some beautifull places...</h2>
+    </div>
+   <div class="div container">
+       <div class="photos">
+           <img src="images/paella.jpg">
+           <h3> Paella </h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati velit quam labore numquam consectetur eius optio libero alias, necessitatibus est? Sit porro sed, minus eius consectetur aut nulla tempore!</p>
+            <a class="aLinks" href="#"> Read more </a>
         </div>
 
-    </footer>
+        <div class="photos">
+            <img src="images/tapas.jpg">
+            <h3> Tapas </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati velit quam labore numquam consectetur eius optio libero alias, necessitatibus est? Sit porro sed, minus eius consectetur aut nulla tempore!</p>
+            <a class="aLinks" href="#"> Read more </a>
+         </div>
 
-    
+         <div class="photos">
+            <img src="images/carnes.jpg">
+            <h3> Meat </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati velit quam labore numquam consectetur eius optio libero alias, necessitatibus est? Sit porro sed, minus eius consectetur aut nulla tempore!</p>
+             <a class="aLinks" href="#"> Read more </a>
+         </div>
+        
+         <div class="photos">
+        <img src="images/paella.jpg">
+        <h3> Paella </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati velit quam labore numquam consectetur eius optio libero alias, necessitatibus est? Sit porro sed, minus eius consectetur aut nulla tempore!</p>
+         <a class="aLinks" href="#"> Read more </a>
+        </div>
+
+        <div class="photos">
+         <img src="images/tapas.jpg">
+         <h3> Tapas </h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati velit quam labore numquam consectetur eius optio libero alias, necessitatibus est? Sit porro sed, minus eius consectetur aut nulla tempore!</p>
+         <a class="aLinks" href="#"> Read more </a>
+      </div>
+
+      <div class="photos">
+         <img src="images/carnes.jpg">
+         <h3> Meat </h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati velit quam labore numquam consectetur eius optio libero alias, necessitatibus est? Sit porro sed, minus eius consectetur aut nulla tempore!</p>
+          <a class="aLinks" href="#"> Read more </a>
+      </div>
+      
+      <div class="photos">
+        <img src="images/paella.jpg">
+        <h3> Paella </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati velit quam labore numquam consectetur eius optio libero alias, necessitatibus est? Sit porro sed, minus eius consectetur aut nulla tempore!</p>
+         <a class="aLinks" href="#"> Read more </a>
+     </div>
+
+     <div class="photos">
+         <img src="images/tapas.jpg">
+         <h3> Tapas </h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati velit quam labore numquam consectetur eius optio libero alias, necessitatibus est? Sit porro sed, minus eius consectetur aut nulla tempore!</p>
+         <a class="aLinks" href="#"> Read more </a>
+      </div>
+
+      <div class="photos">
+         <img src="images/carnes.jpg">
+         <h3> Meat </h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati velit quam labore numquam consectetur eius optio libero alias, necessitatibus est? Sit porro sed, minus eius consectetur aut nulla tempore!</p>
+          <a class="aLinks" href="#"> Read more </a>
+      </div>      
+</div>      
 </body>
 </html>
