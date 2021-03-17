@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backpacking through Spain</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">    
 </head>
-
 <body>
     <header>
-        <nav>
             <a href="#">
             <img class="logo" src="images/logo.png" alt="logo">
-            </a>  
+            </a>
+            <nav class="nav-bar menu-fixed">  
             <ul class="menu-links">
-                <li><a href="#"> Home </a></li>
-                <li><a href="#"> Gastronomy </a></li>
-                <li><a href="#"> History and Culture </a></li>
-                <li><a href="#"> Landscape </a></li>
-                <li><a href="#"> Contact Us </a></li>
+                <li><a href="#">
+                    <img class="logo" src="images/logo.png" alt="logo">
+                    </a></li>    
+                <li><a href="#" class="li-a"> Home </a></li>
+                <li><a href="#" class="li-a"> Gastronomy </a></li>
+                <li><a href="#" class="li-a"> History and Culture </a></li>
+                <li><a href="#" class="li-a"> Landscape </a></li>
+                <li><a href="#" class="li-a"> Contact Us </a></li>
             </ul>
             <button class="ham" type="button">
                 <span class="br-1"></span>
@@ -28,62 +29,46 @@
                 <span class="br-3"></span>
             </button>  
         </nav>
-    </header>
-    <script src="navbar.js"> </script>
-
-    <section class="header">
-        <h1>History;</h1>
-
-    <p> The Iberian Peninsula was first inhabited around 800,000 BC. First came the Phoenicians, then the Greeks, and then the Carthaginians. From Europe came the Celts, They were followed by the Romans In the 8th century, they were conquered by Arab and Berber from North Africa, known as Moors.
+    </header> 
+      <div class="tittle">
+        <h1>History</h1>
+        <p>
+    The Iberian Peninsula was first inhabited around 800,000 BC. First came the Phoenicians, then the Greeks, and then the Carthaginians. From Europe came the Celts, They were followed by the Romans In the 8th century, they were conquered by Arab and Berber from North Africa, known as Moors.
         Under the Muslims, much of Spain, then called Al Andalus, thrived, and science, architecture, and the decorative arts flourished. The  Moorish influence is still evident in architecture and customs throughout the country.
-
-    </p>
-    </section>
-   <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-     <div class="card" style="width: 18rem;">
+        </p>
+      </div>
+      <div class="div container">
+        <div class="photos">
          <img src="image/40203703284_4237fba844_k.jpg" class="card-img-top" alt="Royal Palace seville">
-         <div class="card-body">
-           <h5 class="card-title">Royal Palace Seville</h5>
-           <p class="card-text">It was built for the Christian king Peter of Castile. It was built by Castilian Christians on the site of an Abbadid Muslim alcazar, or residential fortress.[</p>
-           
+           <h3 class="card-title">Royal Palace Seville</h3>
+           <p>It was built for the Christian king Peter of Castile. It was built by Castilian Christians on the site of an Abbadid Muslim alcazar, or residential fortress.[</p>
+           <a class="aLinks" href="#"> Read more </a>
          </div>
-       </div>
-     </div>
-    
-    <div class="col-md-4">
-     <div class="card" style="width: 18rem;">
+       </div>    
+       <div class="div container">
+          <div class="photos">
          <img src="image/40540772892_d266952db1_k.jpg" class="card-img-top" alt="Alhambra Palace">
-         <div class="card-body">
-           <h5 class="card-title">ALhambra Palace</h5>
-           <p class="card-text">Designed as a military zone at the beginning, the Alhambra became the royal residence and court of Granada in the mid-13th century after the establishment of the Nasrid Kingdom and the construction of the first palace by the founding king Mohammed ibn Yusuf Ben Nasr, better known as Alhamar..[</p>
-          
+           <h3 class="card-title">ALhambra Palace</h3>
+           <p>Designed as a military zone at the beginning, the Alhambra became the royal residence and court of Granada in the mid-13th century after the establishment of the Nasrid Kingdom and the construction of the first palace by the founding king Mohammed ibn Yusuf Ben Nasr, better known as Alhamar..[</p>
+           <a class="aLinks" href="#"> Read more </a>
          </div>
        </div>
-     </div>
-    
-    <div class="col-md-4">
-     <div class="card" style="width: 18rem;">
+       <div class="container">
+        <div class="photos">
          <img src="image/26711323038_4f98d2501c_k.jpg" class="card-img-top" alt="Toledo">
-         <div class="card-body">
            <h5 class="card-title">Toledo</h5>
-           <p class="card-text"> Toledo is mentioned by the Roman historian Livy as urbs parva, sed loco munita (“a small city, but fortified by location”). Conquered by the Roman general Marcus Fulvius Nobilior in 193 BCE, it became an important Roman colony and the capital of Carpentia. The city was the residence of the Visigothic court in the 6th century and site of the famous councils, the third of which (589) was particularly important because of King Recared’s conversion to Christianity. During the Moorish period (712–1085), it was the home of an important Mozarab community (Arabic-speaking Christians). Taken by King Alfonso VI in 1085, it became the most important political and social centre of Castile. It was the scene of a fusion of Christian, Arab, and Jewish culture, an example of which was the School of Translators (Escuela de Traductores) established by Alfonso X (the Wise) in the 13th century. The city’s importance declined after Philip II made Madrid his capital (1560).[</p>
-          
+           <p> Toledo is mentioned by the Roman historian Livy as urbs parva, sed loco munita (“a small city, but fortified by location”). Conquered by the Roman general Marcus Fulvius Nobilior in 193 BCE, it became an important Roman colony and the capital of Carpentia. The city was the residence of the Visigothic court in the 6th century and site of the famous councils, the third of which (589) was particularly important because of King Recared’s conversion to Christianity. During the Moorish period (712–1085), it was the home of an important Mozarab community (Arabic-speaking Christians). Taken by King Alfonso VI in 1085, it became the most important political and social centre of Castile. It was the scene of a fusion of Christian, Arab, and Jewish culture, an example of which was the School of Translators (Escuela de Traductores) established by Alfonso X (the Wise) in the 13th century. The city’s importance declined after Philip II made Madrid his capital (1560).[</p>
+           <a class="aLinks" href="#"> Read more </a>
          </div>
        </div>
      </div>
-</div>
-</div>
-</div>
-
-    <section class="header">
+    <div class="tittle">
         <h1>Culture;</h1>
 
     <p> Spanish culture and society are a reflection of Spain’s unique position at the crossroads of Europe, Africa and the Mediterranean and the many peoples who have occupied Spain throughout its history. Spain's colorful, lively and passionate culture draws millions of visitors every year, all of whom are eager to experience this fun and vibrant country for themselves. Without a doubt, there's no better time to experience local culture at its best than during one of the myriad traditional festivals in Spain throughout the year. Have a look at some of the biggest festivals and cultural events around Spain.
 
     </p>
-    </section>
+    </div>
     <div class="all-culture-class">
     
     <div class="card" style="width: 18rem;">
@@ -116,5 +101,6 @@
       </div>
     </div>
 </div>
+<script src="navbar.js"> </script>
 </body>
 </html>
