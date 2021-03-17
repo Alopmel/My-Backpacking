@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    border: 4px;
+    height: 200px;
+    background: #EEEEEE; 
+    padding: auto
+}
+
+.card-body {
+    height: auto;
+}
