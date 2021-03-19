@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +10,11 @@ body{
     padding: 0;
     margin: 0;
     line-height: 1.6;
-    font-family:'Ubuntu Regular', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p{
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* STYLE NAV */
@@ -34,6 +40,7 @@ body{
     color: #fff;
     text-decoration: none;
 }
+
 .li-a:hover{
     background: lightgray;
     color: black;
@@ -142,26 +149,48 @@ body{
     transform: rotate(45deg) translate(-10px, -8px);
 }
 
-/* STYLE SLIDER*/
+/* STYLE SLIDER INDEX*/
 
 .slider{
     margin: auto;
+    margin-bottom: 26px;
     overflow: hidden;
     width: 68%;
-    border-radius: 8px;
-        margin-top: 96px;
+    border-radius: 3px;
+    margin-top: 96px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .slider ul{
+    
     display: flex;
     padding: 0;
     width: 300%;
     animation: change 20s infinite alternate ease-in-out;
-    margin: 0;
-    align-items: center;
-    
+    height: 472px;
+    text-align: center;
+    font-size: 31px;
+    color: white; 
 }
+.li-1{
+    background-image: url("images/home-spain.jpg");
+}
+
+.li-2{
+    background-image: url("images/home-spain2.jpg");
+}
+
+.li-3{
+    background-image: url("images/home-spain3.jpg");
+}
+.h1-text{
+    margin:auto;
+}
+.h1-subtext{
+    text-align: center;
+    font-size: 30px;
+}
+
 
 
 @keyframes change{
@@ -273,7 +302,7 @@ body{
 }
 
 .tittle-h{
-    width: 85%;
+    width: 100%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 25px;
@@ -300,3 +329,140 @@ body{
     color: gray;
 }
 
+
+/* STYLE TEXT SUBPAGES */
+
+.text-subpag h1{
+    margin: 50px 50px;
+}
+
+.text-p{
+    text-align: justify;
+    margin-left: 50px;
+    margin: 0 50px;
+}
+.text-subpag{
+    top: 0;
+    background-color:#fff ;
+    margin-top: 238px;
+}
+
+
+/* STYLE PHOTOS SUBPAGES*/
+
+  
+.photo-subpagS{
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    min-height: 500px;
+    margin: 210px 0px;
+    width: 100vw;
+    height: 100vh;
+    transform: skewY(5deg);
+    z-index: -1;
+}
+
+.shadow{
+    box-shadow: -2px -5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.photo-subpag-paella{
+    position: fixed;
+    background: url("images/paella.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-tapas{
+    position: fixed;
+    background: url("images/tapa1.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+
+}
+
+.photo-subpag-meat{
+    position: fixed;
+    background: url("images/meat1.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+
+}
+
+.photo-subpag-cider{
+    position: fixed;
+    background: url("images/sidra.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-wine{
+    position: fixed;
+    background: url("images/wine.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100vw;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-beer{
+    position: fixed;
+    background: url("images/beer.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.list-beers{
+    margin-left: 50px;
+}
+
+.list-beers-buy{
+    list-style: none;
+    margin-left: 50px;
+}
+
+h2 {
+    margin: 50px 50px 10px;
+}
+
+hr{
+ margin-top: 50px;
+}
+
+/*DISQUS STYLE*/
+
+.disqus_thread{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+}
