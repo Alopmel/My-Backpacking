@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backpacking through Spain</title>
+    <link rel="stylesheet" href="navbar.css">    
+</head>
+<body class="fondo-contact">
+    <header>
+            <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="logo">
+            </a>
+            <nav class="nav-bar menu-fixed">  
+            <ul class="menu-links">
+                <li><a href="index.html">
+                    <img class="logo" src="images/logo.png" alt="logo">
+                    </a></li>    
+                <li><a href="index.html" class="li-a"> Home </a></li>
+                <li><a href="gastronomy.html" class="li-a"> Gastronomy </a></li>
+                <li><a href="history-culture.html" class="li-a"> History and Culture </a></li>
+                <li><a href="Landscape.html" class="li-a"> Landscape </a></li>
+                <li><a href="contact-us.html" class="li-a"> Contact Us </a></li>
+            </ul>
+            <button class="ham" type="button">
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>  
+        </nav>
+    </header>
+   <div class="container-form">
+    <div class="about">
+        <h1>About Us</h1>
+        <p class="aboutUs">
+         We are Axhar and Alba. We telework as web developers and have spent several years traveling as backpackers in Spain.We have created this website so that adventurers like us can discover the best gastronomy, culture and landscapes in Spain. But we still have a lot to discover.
+        </p></br>
+        <p class="aboutUs">
+         If you know a beautiful place and want to suggest it to us or have an exciting story that you want to share with us...Do not hesitate. Sign up and send us your comment!
+        </p></br>
+    </div>
+    <form action="#" method="POST" class="singUp" id="form" onsubmit="return false;">
+		<h1> Sign up</h1>		
+        <label for="name">Name:</label><br/>
+        <input type="text" name="name" id="name" placeholder="Insert your name"/></br>
+        <span id="error_name"></span>
+
+        <label for="surnames">Surnames:</label></br>
+        <input type="text" name="surnames" id="surnames" placeholder="Inset your surname"/></br>
+        <span id="error_surnames"></span>
+
+        <label for="email">Email:</label><br/>
+        <input type="email" name="email" id="email" placeholder="Insert your favorite email"><br/>
+        <span id="error_email"></span>
+
+        <label for="password"> Choose a password:</label><br/>
+        <input type="password" name="password" id="password" placeholder="Insert a strong password"><br/>
+        <span id="error_password"></span>
+
+        <label for="password"> Repeat your password:</label><br/>
+        <input type="password-repeat" name="password-repeat" id="password-repeat" placeholder="Insert the same password"><br/>
+        <span id="error_password-repeat"></span>
+
+        <button class="button" type="submit" id="send"> Send </button>
+        <button class="button" type="reset" id="reset"> Reset </button>
+    </form>
+    <form action="#" method="POST" class="singUp" id="contact-us" onsubmit="return false;">
+		<h1> Contact Us</h1>		
+        
+        <label for="email">Email:</label><br/>
+        <input type="email" name="email" id="email" placeholder="Insert your favorite email"><br/>
+        <span id="error_email"></span><br/>
+
+        <label for="tellUs"> What do you want to tell us? </label><br/>
+        <textarea class="textArea" id="textArea" placeholder="Tell us your backpacking story or ask us what you want..."></textarea>
+        <span id="error_textArea"></span><br/>
+
+        <button class="button" type="submit" id="send"> Send </button>
+        <button class="button" type="reset" id="reset"> Reset </button>
+    </form>
+   </div>
+   
+   <footer>
+
+    <div class="content-footer">
+    <div  class="content-body">
+        
+        <div class="colum1">
+            <h1 class="h1-footer"> More information about the website </h1>
+
+            <p>On this website you can find information about the gastronomy, history, culture and landscapes of Spain</p>
+        
+        </div>
+
+        <div class="colum2">
+            <h1 class="h1-footer"> Social media</h1>
+            
+            <div class="row">
+                <img src="images/facebook.png" alt="facebook">
+                <label> Follow us on Facebook </label>
+            </div>
+
+            <div class="row">
+                <img src="images/twitter.png" alt="twitter">
+                <label> Follow us on Twitter </label>
+            </div>
+
+            <div class="row">
+                <img src="images/instagram.png" alt="instagram">
+                <label> Follow us on Instagram </label>
+            </div>
+
+            <div class="row">
+                <img src="images/google.png" alt="google">
+                <label> Follow us on Google </label>
+            </div>
+
+        </div>
+
+        <div class="colum3">
+            <h1 class="h1-footer"> Contact </h1>
+
+            <div class="row2">
+                <img src="images/house.png" alt="house">
+                <label> C/ Comercio numer 12, portal 9, door 2B. 28260 Madrid</label>
+            </div>
+            <div class="row2">
+                <img src="images/mobile.png" alt="mobile">
+                <label>  625 125 125</label>
+            </div>
+            <div class="row2">
+                <img src="images/letter.png" alt="letter">
+                <label> backpacking-spain@gmail.com</label>
+            </div>
+        
+        </div> 
+    </div> 
+        
+    <div class="content-footer2">
+        <div class="copyright">
+            <p><span class="span-names">©2021 Axhar & Alba </span> - First project at Wildcode Code School</p>
+        </div>
+
+        <div class="information">
+            <a href="#"> Company information </a>|
+            <a href="#"> Privacy and policy </a>|
+            <a href="#"> Terms and Conditions </a>
+        </div>
+    
+    </div>        
+</div>  
+</footer> 
+<script src="navbar.js"> </script>      
+</body>
+</html>

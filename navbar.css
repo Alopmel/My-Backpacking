@@ -1,0 +1,786 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-mov{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* STYLE NAV */
+
+.nav-bar{
+    background: #292828;
+    margin-bottom: 40px;
+}
+
+.menu-links {
+    list-style: none;
+    overflow: hidden;
+}
+
+.menu-links li {
+    float:left;  
+    padding: 5px;  
+}
+
+.li-a{
+    display:block;
+    padding: 23px 7px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.li-a:hover{
+    background: lightgray;
+    color: black;
+}
+
+.menu-fixed{
+    position: fixed;
+    height: 80px;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+.logo{
+    width: 107px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 0px 20px 0px 16px;
+    
+}
+
+/*STYLE NAV-MOBILE */
+
+.ham{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.ham span {
+    display: block;
+    background-color: #92E442;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+
+/*MOVILE*/
+
+@media screen and (max-width: 768px){
+
+    .logo-mov{
+
+    }
+    body{
+        overflow: hidden;
+    }
+
+    .ham{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        transition: 0.2s 0.1s;
+    }
+    
+    .ham:hover{
+        transform: rotate(360deg);
+    }
+
+    nav .menu-fixed{
+        flex-direction: column;
+        align-items: center;
+        padding-top:25px 0; 
+    }
+
+    .menu-links{
+        background: #292828;
+        flex-direction: column;        
+        align-items: left;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display:none;
+        opacity: 0;
+    }
+
+    .menu-links li{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .slider{
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .content-body{
+        display: block ;
+    }
+}
+
+@keyframes showMenu{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.menu-links.activate{
+    display:flex;
+    animation: showMenu 400ms ease-in-out both;
+}
+
+.br-1.animated{
+    transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animated{
+    opacity: 0;
+}
+
+.br-3.animated{
+    transform: rotate(45deg) translate(-10px, -8px);
+}
+
+/* STYLE SLIDER INDEX*/
+
+.slider{
+    margin: auto;
+    margin-bottom: 26px;
+    overflow: hidden;
+    width: 68%;
+    border-radius: 3px;
+    margin-top: 96px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.slider ul{
+    
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: change 20s infinite alternate ease-in-out;
+    height: 472px;
+    text-align: center;
+    font-size: 31px;
+    color: white; 
+}
+.li-1{
+    background-image: url("images/home-spain.jpg");
+}
+
+.li-2{
+    background-image: url("images/home-spain2.jpg");
+}
+
+.li-3{
+    background-image: url("images/home-spain3.jpg");
+}
+.h1-text{
+    margin:auto;
+}
+.h1-subtext{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+@keyframes change{
+   0% { margin-left: 0%;}
+   20% { margin-left: 0%;}
+
+   25% { margin-left: -100%;}
+   45% { margin-left: -100%;}
+
+   50% { margin-left: -100%;}
+   70% { margin-left: -100%;}
+
+   75% { margin-left: -200%;}
+   100% { margin-left: -200%;}
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.tittle{
+    text-align: center;
+    height: 169px;
+    border-radius: 4px;
+    margin-bottom: 15px
+}
+
+.tittle h1{
+    font-size: 36px;
+    margin: 28px 0 0;
+    padding: 21px;
+    text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+}
+
+.tittle h2{
+    font-size: 25px;
+    text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+
+}
+
+/* STYLE CONTAINER */
+
+.tittle p{
+    font-size: 18;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .photos {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.container .photos:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .photos img {
+    width: 330px;
+    height: 220px;
+}
+
+.container .photos h3{
+    font-size: 20px;
+}
+
+.container .photos p{
+    padding: 0 1rem;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.container .photos a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* STYLE FORM */
+
+
+.container-form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    background-image: url(images/fondo-contact1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom: 1px solid;
+}
+
+.singUp{
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: 20px 50px 50px;
+    padding: 33px;
+    background-color: #f2f1f1;
+}
+
+.button{
+    background-color: #292828;
+    width: 47%;
+    padding: 6px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+
+.contact-us{
+    border: 1px solid black;
+}
+
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 15px;
+    padding: 4px 1px 0;
+    border: none;
+    margin: 2px 7px 21px;
+    border-bottom: 1px solid black;
+}
+
+label{
+    margin: 10px;
+    font-weight: bold;
+}
+
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.textArea{
+    border-radius: 2px;
+    width: 247px;
+    height: 208px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 9px 0;
+    font-size: 12px;
+    padding: 8px;
+
+}
+
+/* STYLE ABOUT US*/
+.about{
+    width: 80%;
+    background-color: #f2f1f1;
+    border-radius: 4px;
+    margin: 50px 0 23px;
+    padding: 20px;
+    font-weight: bold;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.aboutUs{
+    text-align: center;
+}
+/* STYLE TITTLE HISTORY-CULTURE/GASTRONOMY/LANDSCAPE*/
+.div-history{
+    display: block;
+}
+
+.div-culture{
+    display: block;
+}
+
+.tittle-h{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding: 12px 16px;
+    background-color: #f2f1f1;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+    text-align: center;
+    padding: 32px;
+}
+.tittle-h p {
+    text-align: center;
+    
+}
+
+/* STYLE TEXT SUBPAGES */
+
+.text-subpag h1{
+    margin: 50px 140px;
+}
+
+.text-p{
+    text-align: justify;
+    margin: 0 140px;
+    width: 80%;
+}
+.text-subpag{
+    
+    background-color:#fff ;
+    margin-top: 238px;
+}
+
+.list-beers{
+    margin-left: 160px;
+}
+
+.list-beers-buy{
+    margin-left: 160px;
+}
+
+h2 {
+    margin: 50px 160px 10px;
+}
+
+hr{
+ margin-top: 50px;
+}
+
+/* STYLE PHOTOS SUBPAGES*/
+
+  
+.photo-subpagS{
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    min-height: 500px;
+    margin: 210px 0px;
+    width: 100vw;
+    height: 100vh;
+    transform: skewY(5deg);
+    z-index: -1;
+}
+
+.shadow{
+    box-shadow: -2px -5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.photo-subpag-paella{
+    position: fixed;
+    background: url("images/paella.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-tapas{
+    position: fixed;
+    background: url("images/tapa1.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+
+}
+
+.photo-subpag-meat{
+    position: fixed;
+    background: url("images/meat1.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+
+}
+
+.photo-subpag-cider{
+    position: fixed;
+    background: url("images/sidra.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-wine{
+    position: fixed;
+    background: url("images/wine.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100vw;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-beer{
+    position: fixed;
+    background: url("images/beer.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-royal{
+    position: fixed;
+    background: url("images/royal-palace.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-alhambra{
+    position: fixed;
+    background: url("images/alhambra.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-toledo{
+    position: fixed;
+    background: url("images/toledo.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-semana{
+    position: fixed;
+    background: url("images/semana-santa.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-fermin{
+    position: fixed;
+    background: url("images/san-fermin.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-fallas{
+    position: fixed;
+    background: url("images/fallas.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-plain{
+    position: fixed;
+    background: url("images/plain-green.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-snow{
+    position: fixed;
+    background: url("images/snow-capped.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-trees{
+    position: fixed;
+    background: url("images/trees.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-gulf{
+    position: fixed;
+    background: url("images/gulf-cadiz.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-javea{
+    position: fixed;
+    background: url("images/javea.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.photo-subpag-costa{
+    position: fixed;
+    background: url("images/costa.jpg");
+    background-size: cover;
+    background-color: #58aff6;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+/* STYLE CSS FOOTER */
+
+footer{
+    width: 100%;
+    background-color: #252425;
+    color: #ffff;
+
+
+}
+
+.container-footer{
+    width: 100%;
+    
+}
+
+.content-body{
+    display: flex;
+    justify-content: space-around;
+}
+
+.colum1{
+   max-width: 400px;
+}
+
+.h1-footer{
+    font-size: 22px;
+}
+
+.p-footer{
+    font-size: 14px;
+    color: #6b6a6a;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+}
+
+.colum2 .row{
+    margin-top: 20px;
+    display:flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #6b6a6a;
+}
+
+.row1 label{
+    margin-top: 10px;
+    margin-left: 10px; 
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.content-footer2{
+    width: 100%;
+    background-color: rgb(24, 23, 23);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color:#6b6a6a;
+}
+
+.copyright{
+    color: #6b6a6a;
+}
+
+.span-names{
+    text-decoration: none;
+}
+
+.information a{
+    text-decoration: none;
+    color:#6b6a6a;
+}
+
+
