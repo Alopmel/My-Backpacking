@@ -1,15 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box ;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    line-height: 1.6;
+body{
+    
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -174,7 +171,7 @@
     margin: auto;
     margin-bottom: 26px;
     overflow: hidden;
-    width: 68%;
+    width: 90%;
     border-radius: 3px;
     margin-top: 96px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -193,14 +190,26 @@
 }
 .li-1{
     background-image: url("images/home-spain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .li-2{
     background-image: url("images/home-spain2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .li-3{
     background-image: url("images/home-spain3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .h1-text{
     margin:auto;
@@ -269,14 +278,14 @@
 }
 
 .container .photos {
-    width: 330px;
-    height: 430px;
+    width: 310px;
+    height: 381px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 20px;
     text-align: center;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .container .photos:hover{
@@ -285,8 +294,8 @@
 }
 
 .container .photos img {
-    width: 330px;
-    height: 220px;
+    width: 100%;
+    height: 57%;
 }
 
 .container .photos h3{
@@ -294,9 +303,9 @@
 }
 
 .container .photos p{
-    padding: 0 1rem;
+    padding: 0 14px;
     font-size: 13px;
-    font-weight: 300;
+    margin-top: 4px;
 }
 
 .container .photos a{
@@ -327,11 +336,12 @@
     margin: 20px 50px 50px;
     padding: 33px;
     background-color: #f2f1f1;
+    width: 303px;
 }
 
 .button{
     background-color: #292828;
-    width: 47%;
+    width: 104%;
     padding: 6px;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
@@ -348,7 +358,7 @@ input{
     font-size: 15px;
     padding: 4px 1px 0;
     border: none;
-    margin: 2px 7px 21px;
+    margin: 2px 7px 0px;
     border-bottom: 1px solid black;
 }
 
@@ -365,14 +375,18 @@ h1{
 .textArea{
     border-radius: 2px;
     width: 247px;
-    height: 208px;
+    height: 93px;
     font-family: 'Montserrat', sans-serif;
-    margin: 9px 0;
+    margin: 9px 0 0;
     font-size: 12px;
     padding: 8px;
-
 }
 
+.error-message{
+    color:red;
+    font-size: 10px;
+
+}
 /* STYLE ABOUT US*/
 .about{
     width: 80%;
@@ -416,12 +430,13 @@ h1{
 /* STYLE TEXT SUBPAGES */
 
 .text-subpag h1{
-    margin: 50px 140px;
+    margin: auto;
+    margin-bottom: 20px
 }
 
 .text-p{
     text-align: justify;
-    margin: 0 140px;
+    margin: auto;
     width: 80%;
 }
 .text-subpag{
@@ -439,7 +454,8 @@ h1{
 }
 
 h2 {
-    margin: 50px 160px 10px;
+    margin: 47px 160px 21px;
+    text-align: center;
 }
 
 hr{
@@ -463,12 +479,15 @@ hr{
 
 .shadow{
     box-shadow: -2px -5px 5px 0px rgba(0,0,0,0.3);
+    width: 100%;
 }
 
 .photo-subpag-paella{
     position: fixed;
     background: url("images/paella.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-color: #58aff6;
     top: 0;
     height: 400px;
@@ -704,10 +723,13 @@ footer{
 
 .colum1{
    max-width: 400px;
+   margin: 10px 23px 0;   
 }
 
 .h1-footer{
-    font-size: 22px;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 5px;
 }
 
 .p-footer{
@@ -718,6 +740,7 @@ footer{
 
 .colum2{
     max-width: 400px;
+    margin: 10px 23px 0;
 }
 
 .colum2 .row{
@@ -725,9 +748,18 @@ footer{
     display:flex;
 }
 
+.row2 label{
+    font-size: 14px;
+    color: #6b6a6a;
+    margin-top: 20px;
+}
 .row img{
     width: 36px;
     height: 36px;
+}
+.row2-img2{
+    width: 30px;
+    margin: 0px 7px 15px 11px;
 }
 
 .row label{
@@ -743,6 +775,7 @@ footer{
 
 .colum3{
     max-width: 400px;
+    margin: 10px 23px 0;
 }
 
 .row2{
@@ -751,7 +784,6 @@ footer{
 }
 
 .row2 img{
-    width: 36px;
     height: 36px;
 }
 
@@ -784,3 +816,48 @@ footer{
 }
 
 
+/* STYLE FORO */
+
+.foro {
+    background-color: white;
+    width: 100%;
+}
+
+.container-foro {
+    
+}
+
+.foro-text {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    padding: 31px;
+    font-weight: bold;
+}
+
+.containerUser {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.box-text{
+    width: 80%;
+    margin: auto;
+}
+
+.buttonForo{
+    background-color: #292828;
+    padding: 6px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+}
+
+.containerText{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+
+}

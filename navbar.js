@@ -7,5 +7,3 @@ ham.addEventListener('click', () =>{
     links.classList.toggle('activate');
     bars.forEach(child => {child.classList.toggle('animated')});
 });
-
-
