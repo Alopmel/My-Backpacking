@@ -25,7 +25,12 @@ body{
 
 /* STYLE NAV */
 
-.nav-bar{
+.menu-fixed{
+    position: fixed;
+    height: 80px;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     background: #292828;
     margin-bottom: 40px;
 }
@@ -52,13 +57,6 @@ body{
     color: black;
 }
 
-.menu-fixed{
-    position: fixed;
-    height: 80px;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-}
 .logo{
     width: 107px;
     cursor: pointer;
@@ -80,7 +78,7 @@ body{
 
 .ham span {
     display: block;
-    background-color: #92E442;
+    background-color: #c6c8c4;
     height: 3px;
     width: 28px;
     margin: 10px auto;
@@ -92,14 +90,7 @@ body{
 
 @media screen and (max-width: 768px){
 
-    .logo-mov{
-
-    }
-    body{
-        overflow: hidden;
-    }
-
-    .ham{
+     .ham{
         display: block;
         position: absolute;
         top: 15px;
@@ -182,7 +173,7 @@ body{
     display: flex;
     padding: 0;
     width: 300%;
-    animation: change 20s infinite alternate ease-in-out;
+    animation: change 10s infinite alternate ease-in-out;
     height: 472px;
     text-align: center;
     font-size: 31px;
@@ -718,6 +709,7 @@ footer{
 
 .content-body{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
